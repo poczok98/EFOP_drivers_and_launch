@@ -1,0 +1,8 @@
+prefix=/usr/catkin_ws_efop/devel
+
+Name: system_launch
+Description: Description of system_launch
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

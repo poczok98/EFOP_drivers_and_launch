@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /usr/catkin_ws_efop/install/setup.sh

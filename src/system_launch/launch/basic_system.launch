@@ -1,0 +1,16 @@
+<launch>
+    <include file="$(find velodyne_pointcloud)/launch/VLP16_points.launch" />
+    <include file="$(find vectornav)/launch/vectornav.launch" />
+    <include file="$(find zed-wrapper)/launch/zed.launch" />
+    <!--Can--> 
+    <node pkg="socketcan_bridge" type="socketcan_bridge_node" name="can0" output="screen" required="true">
+        <rosparam command="load" file="$(find socketcan_bridge)/config/config.yaml"/>
+    <param name="can_device" type="str" value="can0" />
+    </node>
+	<node pkg="socketcan_bridge" type="socketcan_bridge_node" name="can1" output="screen" required="true">
+        <rosparam command="load" file="$(find socketcan_bridge)/config/config.yaml"/>
+    <param name="can_device" type="str" value="can1" />
+    <remap from="/sent_messages" to="/sent_messages_1"/>
+    <remap from="/received_messages" to="/received_messages_1"/>
+    </node>
+</launch>

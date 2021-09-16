@@ -1,0 +1,8 @@
+prefix=/usr/catkin_ws_efop/devel
+
+Name: canopen_402
+Description: Description of canopen_402
+Version: 0.8.5
+Cflags: -I/usr/catkin_ws_efop/src/ros_canopen/canopen_402/include -I/usr/include
+Libs: -L${prefix}/lib -lcanopen_402
+Requires: canopen_master

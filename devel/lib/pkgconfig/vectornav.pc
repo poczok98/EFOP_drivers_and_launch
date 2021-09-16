@@ -1,0 +1,8 @@
+prefix=/usr/catkin_ws_efop/devel
+
+Name: vectornav
+Description: Description of vectornav
+Version: 2.0.0
+Cflags: -I/usr/catkin_ws_efop/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp sensor_msgs

@@ -1,0 +1,8 @@
+prefix=/usr/catkin_ws_efop/devel
+
+Name: velodyne_laserscan
+Description: Description of velodyne_laserscan
+Version: 1.6.1
+Cflags: -I/usr/catkin_ws_efop/devel/include
+Libs: -L${prefix}/lib 
+Requires: sensor_msgs
